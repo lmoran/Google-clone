@@ -1,0 +1,154 @@
+:root {
+  --background: #ffffff;
+  --color: #222;
+}
+body {
+  background: var(--background);
+  margin: 0;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+}
+.wraper {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 50px 1fr 82px;
+}
+/* header */
+.header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.header a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+  margin-right: 15px;
+  font-size: small;
+}
+.header a:hover {
+  text-decoration: underline;
+  color: rgba(0, 0, 0, 0.5);
+}
+.header-cuadro {
+  margin: 0;
+  max-width: 30px;
+  height: 30px;
+  box-sizing: border-box;
+}
+.header-cuadro img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+/* section main */
+.section-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  margin: 0;
+  height: 92px;
+  max-width: 272px;
+}
+.logo img {
+  width: 100%;
+}
+.main {
+  margin-bottom: 2em;
+}
+.form {
+  width: 582px;
+  height: 44px;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+}
+.search {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+.form i {
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0 10px;
+}
+.form img {
+  margin: 0 10px;
+}
+.btn {
+  background-color: #f3f3f3;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  color: #5f6368;
+  font-size: 15px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  outline: none;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+
+  cursor: pointer;
+  user-select: none;
+}
+.btn:hover {
+  background-color: #f8f8f8;
+  border: 1px solid #c6c6c6;
+  color: #222;
+}
+.parrafo {
+  margin: 0;
+  font-size: small;
+}
+.parrafo a {
+  padding: 0 3px;
+  text-decoration: none;
+  color: #1a0dab;
+}
+.parrafo a:hover {
+  text-decoration: underline;
+}
+/* Footer */
+.footer {
+  padding: 0 20px;
+  background: #f2f2f2;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+.footer-top {
+  align-self: center;
+}
+.footer-top p {
+  color: rgba(0, 0, 0, 0.54);
+  margin: 0;
+  font-size: 15px;
+}
+.footer-bottom {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-self: center;
+}
+.footer-bottom a {
+  margin-right: 30px;
+  text-decoration: none;
+  color: #5f6368;
+}
+.footer-bottom a:last-child {
+  margin-right: 0;
+}
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+.footer-rigth {
+  justify-self: flex-end;
+}
