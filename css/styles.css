@@ -70,20 +70,28 @@ body {
   grid-template-columns: auto 1fr auto;
   align-items: center;
 }
+.form:hover {
+  box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+  border-color: rgba(223, 225, 229, 0);
+}
 .search {
   width: 100%;
-  height: 100%;
+  height: 42px;
   border: none;
   outline: none;
   font-size: 16px;
 }
 .form i {
-  font-size: 20px;
+  font-size: 18px;
   color: rgba(0, 0, 0, 0.5);
-  margin: 0 10px;
+  margin: 0 15px;
 }
 .form img {
-  margin: 0 10px;
+  margin: 0 15px;
+  cursor: pointer;
+  width: 13px;
+  height: 20px;
+  /* height: 20px; */
 }
 .btn {
   background-color: #f3f3f3;
